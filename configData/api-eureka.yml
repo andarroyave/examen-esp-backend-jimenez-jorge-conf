@@ -1,14 +1,14 @@
+server:
+  port: ${PORT:8761}
+  
 spring:
   application:
     name: api-eureka
-    cloud:
-server:
-  port: ${PORT:8761}
 eureka:
   instance:
     hostname: localhost
   client:
-    fetchRegistry: false
     registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
