@@ -6,7 +6,7 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3307/examen-esp-backend
-    username: user
+    username: root
     password: password
   jpa:
     hibernate.ddl-auto: update
