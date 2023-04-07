@@ -3,15 +3,13 @@ server:
 spring:
   application:
     name: catalog-service
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/examen-esp-backend
-    username: user
-    password: password
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+  mongodb:
+    embedded:
+      version: 4.0.2
+  data:
+    mongodb:
+      database: serie
+      port: 27019
   rabbitmq:
     username: guest
     password: guest
